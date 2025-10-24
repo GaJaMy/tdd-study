@@ -18,7 +18,7 @@ public class PointHistoryTable {
     private long cursor = 1;
 
     public PointHistory insert(long userId, long amount, TransactionType type, long updateMillis) {
-        throttle(300L);
+//        throttle(300L);
         PointHistory pointHistory = new PointHistory(cursor++, userId, amount, type, updateMillis);
         table.add(pointHistory);
         return pointHistory;

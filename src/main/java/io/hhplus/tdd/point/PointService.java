@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class PointService {
+
     private final PointHistoryTable pointHistoryTable;
     private final UserPointTable userPointTable;
 
